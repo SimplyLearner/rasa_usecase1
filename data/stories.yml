@@ -1,0 +1,39 @@
+version: "3.1"
+
+stories:
+
+- story: greeting_1
+  steps:
+    - intent : greet
+    - action: utter_greet
+
+- story: my name
+  steps:
+  - intent: my_name_is
+  - action: utter_its_nice_to_meet_you
+
+- story: fine
+  steps:
+  - intent: fine_normal
+  - action: utter_help
+
+- story: fine 2
+  steps:
+  - intent: fine_ask
+  - action: utter_reply
+
+- story: news path
+  steps:
+  - intent: news
+  - action: utter_news
+  - action: action_get_news
+
+- story: thanks
+  steps:
+  - intent: thanks
+  - action: utter_anything_else
+
+- story: bye
+  steps:
+  - intent: bye
+  - action: utter_bye
