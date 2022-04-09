@@ -5,3 +5,9 @@
 conda activate rasa
 cd rasa-usecase
 rasa train
+
+# Launch Action server
+# Launch a new paralell session of anaconda prompt
+conda activate rasa
+cd rasa-usecase
+rasa run actions
