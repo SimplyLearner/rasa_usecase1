@@ -1,0 +1,77 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: fine_ask
+  examples: |
+    - I am good, how are you doing ?
+    - I'm fine, how are you?
+    - I'm good, How are you doing?
+
+- intent: my_name_is
+  examples: |
+    - My name is [Atul](PERSON)
+    - My name is [Nachiketh](PERSON)
+    - My name is [Ravi](PERSON)
+    - I'm [prerna](PERSON)
+    - im [Varun](PERSON)
+    - I am [Anil](PERSON)
+
+- intent: fine_normal
+  examples: |
+    - I am doing great
+    - I'm doing great
+    - I'm fine
+    - I'm good
+
+- intent: news
+  examples: |
+    - Share some news around the [world](category)
+    - whats the latest trend on [fashion](category)
+    - tell me some news on [business](category)
+    - tell me some news of [arts](category)
+    - What is cooking in [food](category)
+    - [movies](category)
+    - share some latest news in [sports](category)
+
+- intent : thanks
+  examples: |
+    - Thanks
+    - thank you so much
+
+- intent: bye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: who_invented
+  examples: |
+    - Hey chatbot who invented you ?
+    - Hey chatbot who is your creator ?
+    - Hey chatbot who is your owner ?
+    - who invented you ?
+    - who is your creator ?
+    - who is your owner ?
