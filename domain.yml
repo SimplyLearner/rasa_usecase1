@@ -13,3 +13,61 @@ intents:
 entities:
   - category
   - PERSON
+
+actions:
+  - utter_greet
+  - utter_its_nice_to_meet_you
+  - utter_help
+  - utter_reply
+  - utter_news
+  - action_get_news
+  - utter_anything_else
+  - utter_bye
+  - utter_creator
+
+
+slots:
+  category:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: category
+  PERSON:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: PERSON
+
+responses:
+
+  utter_greet:
+    - text: Hey {PERSON}, how are you
+    - text: Hello {PERSON}, how are you doing today?
+  
+  utter_its_nice_to_meet_you:
+    - text: It's nice to meet you, {PERSON}.
+    - text: Nice to meet you, {PERSON}.
+  
+  utter_help:
+    - text: Great {PERSON}. How can I help you?
+    - text: Great, tell me how can I help you?
+
+  utter_reply:
+    - text: I am doing great. Please let know what can I do for you ?
+    - text: I am doing good. Please let know how can I help you ?
+  
+  utter_anything_else:
+    - text: No worries. Is there anything else I can help you with?
+    - text: No worries. Let me know if there is anything else I can help you with
+  
+  utter_news:
+    - text: I can definitely help you. The top 5 news of the {category}
+    - text: Surely, I can help you. The top 5 news of the {category}
+  
+  utter_bye:
+    - text: Bye and have a nice day
+    - text: Bbye and have a nice day
+  
+  utter_creator:
+    - text: My creator is the Data Scientist
+    - text: My creator is the Edureka PGP Batch

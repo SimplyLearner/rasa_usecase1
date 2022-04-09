@@ -37,3 +37,8 @@ stories:
   steps:
   - intent: bye
   - action: utter_bye
+
+- story: who intented
+  steps:
+  - intent: who_invented
+  - action: utter_creator
