@@ -1,0 +1,15 @@
+version: "3.1"
+
+intents:
+  - greet
+  - fine_ask
+  - my_name_is
+  - fine_normal
+  - news
+  - thanks
+  - bye
+  - who_invented
+
+entities:
+  - category
+  - PERSON
