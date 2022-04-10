@@ -1,0 +1,10 @@
+.ipynb_checkponts/*
+actions/*
+**/*.md
+**/*.ipynb
+*.md
+*.ipynb
+*.dot
+*/*.dot
+.rasa/*
+models/*

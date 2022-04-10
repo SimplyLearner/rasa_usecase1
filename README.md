@@ -15,3 +15,9 @@ conda activate rasa
 cd rasa-usecase
 rasa run actions
 
+# Docker
+docker build -t manifoldailearning/rasa-demo .
+docker run -it -p 8080:8080 manifoldailearning/rasa-demo
+
+docker run -it manifoldailearning/rasa-demo shell
+docker push manifoldailearning/rasa-demo
